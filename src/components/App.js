@@ -4,9 +4,21 @@ import MultiButton from "./MultiButton";
 import ChangeItUp from "./ChangeItUp";
 import Login from "./Login";
 
+
 function App() {
+
+  function Clickable() {
+    function handleClick() {
+      console.log("click");
+    }
+    return <button onClick={handleClick}>Click Me</button>;
+  }
+
+
   return (
     <div>
+      <Clickable />
+      
       <h3>onClick</h3>
       <Tickler />
       <hr />
